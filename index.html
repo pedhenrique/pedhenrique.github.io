@@ -26,13 +26,22 @@
 
       .black-div {
         background-color: black;
-        height: 200px; /* Set the desired height */
+        height: 500px; /* Set the desired height */
+        padding: 20px;
       }
     </style>
   </head>
   <body>
     <div class="title">Canibuild SearchBar Test</div>
 
-    <div class="black-div"></div>
+    <div class="black-div">
+      <div id="root" data-token="a3bfedb8-ba04-4587-a682-8ce1af1c1be0"></div>
+    </div>
+    <script>
+      const scriptElement = document.createElement("script");
+      scriptElement.src = `https://search-widget.canibuild.com/embed.js`;
+      scriptElement.type = "module";
+      document.body.appendChild(scriptElement);
+    </script>
   </body>
 </html>
