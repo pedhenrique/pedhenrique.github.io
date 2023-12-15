@@ -35,11 +35,14 @@
     <div class="title">Canibuild SearchBar Test</div>
 
     <div class="black-div">
-      <div id="canibuild-widget-search-root" data-token="embedme"></div>
+      <div
+        id="canibuild-widget-search-root"
+        data-token="anibuild-widget-test"
+      ></div>
     </div>
     <script>
       const scriptElement = document.createElement("script");
-      scriptElement.src = `https://search-widget.nonprod.cloud.verumtek.com.au/embed.js?cache-buster=${Date.now()}`;
+      scriptElement.src = `https://search-widget.canibuild.com/embed.js?cache-buster=${Date.now()}`;
       scriptElement.type = "module";
       document.body.appendChild(scriptElement);
     </script>
